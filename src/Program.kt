@@ -1,5 +1,10 @@
 fun main(){
     val passwordGen = PasswordGen()
 
-    println(passwordGen.generate(length = 10))
+    for(i in 8..50){
+        println(passwordGen.generate(length = i))
+    }
+
+    // IllegalArgumentException
+    println(passwordGen.generate(length = 3))
 }
